@@ -12,7 +12,7 @@ The MyToken contract is a straightforward implementation of a custom token on th
 
 To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
 
-Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., HelloWorld.sol). Copy and paste the following code into the file:
+Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., Token.sol). Copy and paste the following code into the file:
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
@@ -45,7 +45,34 @@ contract MyToken {
 
 }
 ```
+Compile the Contract:
+Click on the "Solidity Compiler" tab in the left-hand sidebar.
+Ensure the "Compiler" option is set to "0.8.18" (or another compatible version).
+Click on the "Compile MyToken.sol" button.
 
+Deploy the Contract:
+
+Click on the "Deploy & Run Transactions" tab in the left-hand sidebar.
+Ensure the environment is set to "JavaScript VM (London)" for a local blockchain environment.
+Select the "MyToken" contract from the dropdown menu.
+Click on the "Deploy" button to deploy the contract.
+
+Interact with the Contract:
+
+Once the contract is deployed, you will see the deployed contract instance under the "Deployed Contracts" section in the left-hand sidebar.
+Expand the deployed contract instance to see available functions.
+
+Mint Tokens:
+
+Find the mint function in the deployed contract instance.
+Enter the address and amount of tokens to mint in the input fields (e.g., "0xYourAddress", 100).
+Click on the mint button to mint the tokens.
+
+Burn Tokens:
+
+Find the burn function in the deployed contract instance.
+Enter the address and amount of tokens to burn in the input fields (e.g., "0xYourAddress", 50).
+Click on the burn button to burn the tokens.
 
 ## Authors
 Manasvi Awasthi
